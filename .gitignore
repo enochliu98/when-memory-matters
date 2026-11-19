@@ -1,0 +1,40 @@
+# Credentials and local editor state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+.vscode/
+.claude/
+
+# Python environments and build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+*.egg-info/
+/build/
+/dist/
+
+# Generated traces may contain full prompts and model outputs.
+/runs/
+/results/
+/Bench/results/
+/Benchmark/runs/
+/experiments/
+/tmp/
+
+# Local manuscript and review artifacts do not belong in the code release.
+/AuthorKit27/
+/DAI/
+/els-cas-templates/
+/elsarticle/
+/IEEE-conference-template-*/
+/*.pdf
+/*.zip
+/*.xlsx
+/*.xls
