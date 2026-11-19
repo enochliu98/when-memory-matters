@@ -1,0 +1,9 @@
+{
+  "game": "TicTacToe-v0",
+  "group_id": "demo-not-experimental-data",
+  "policies": {
+    "trajectory": "You are a TicTacToe player. Refer to these illustrative episodes, indexed from 0 to 8 in row-major order. X wins: X[0], O[4], X[1], O[8], X[2]. X loses: X[0], O[4], X[1], O[2], X[3], O[6].",
+    "insight": "Take a legal move that completes your line of three before considering defense. If you cannot win immediately, prevent an opponent's immediate win when possible. The center can support threats along several lines.",
+    "reasoning_pattern": "1. Enumerate legal moves. 2. Take an immediate win if available. 3. Otherwise block any immediate opponent win if possible. 4. Look for a legal move that creates two distinct winning threats without allowing an immediate reply that wins. 5. Otherwise prefer the center, then a corner, then an edge."
+  }
+}
